@@ -1,0 +1,11 @@
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\bin\Debug\net8.0\Employee.Domain.deps.json
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\bin\Debug\net8.0\Employee.Domain.dll
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\bin\Debug\net8.0\Employee.Domain.pdb
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\obj\Debug\net8.0\Employee.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\obj\Debug\net8.0\Employee.Domain.AssemblyInfoInputs.cache
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\obj\Debug\net8.0\Employee.Domain.AssemblyInfo.cs
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\obj\Debug\net8.0\Employee.Domain.csproj.CoreCompileInputs.cache
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\obj\Debug\net8.0\Employee.Domain.dll
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\obj\Debug\net8.0\refint\Employee.Domain.dll
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\obj\Debug\net8.0\Employee.Domain.pdb
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Domain\obj\Debug\net8.0\ref\Employee.Domain.dll

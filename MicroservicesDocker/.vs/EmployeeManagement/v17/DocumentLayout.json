@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\A C E R   N I T R O\\Documents\\.NET\\Uy ishi\\MicroservicesDocker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86138046-8B50-4225-A9DF-63A726C3D679}|docker-compose.dcproj|c:\\users\\a c e r   n i t r o\\documents\\.net\\uy ishi\\microservicesdocker\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{86138046-8B50-4225-A9DF-63A726C3D679}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB1A843E-BDE2-4B98-9875-978A912D4AB6}|src\\APIGateway\\APIGateway.API\\APIGateway.API.csproj|c:\\users\\a c e r   n i t r o\\documents\\.net\\uy ishi\\microservicesdocker\\src\\apigateway\\apigateway.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EB1A843E-BDE2-4B98-9875-978A912D4AB6}|src\\APIGateway\\APIGateway.API\\APIGateway.API.csproj|solutionrelative:src\\apigateway\\apigateway.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB1A843E-BDE2-4B98-9875-978A912D4AB6}|src\\APIGateway\\APIGateway.API\\APIGateway.API.csproj|c:\\users\\a c e r   n i t r o\\documents\\.net\\uy ishi\\microservicesdocker\\src\\apigateway\\apigateway.api\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB1A843E-BDE2-4B98-9875-978A912D4AB6}|src\\APIGateway\\APIGateway.API\\APIGateway.API.csproj|solutionrelative:src\\apigateway\\apigateway.api\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB1A843E-BDE2-4B98-9875-978A912D4AB6}|src\\APIGateway\\APIGateway.API\\APIGateway.API.csproj|c:\\users\\a c e r   n i t r o\\documents\\.net\\uy ishi\\microservicesdocker\\src\\apigateway\\apigateway.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB1A843E-BDE2-4B98-9875-978A912D4AB6}|src\\APIGateway\\APIGateway.API\\APIGateway.API.csproj|solutionrelative:src\\apigateway\\apigateway.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\A C E R   N I T R O\\Documents\\.NET\\Uy ishi\\MicroservicesDocker\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\A C E R   N I T R O\\Documents\\.NET\\Uy ishi\\MicroservicesDocker\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAE4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-05-09T05:38:14.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\A C E R   N I T R O\\Documents\\.NET\\Uy ishi\\MicroservicesDocker\\src\\APIGateway\\APIGateway.API\\Dockerfile",
+              "RelativeDocumentMoniker": "src\\APIGateway\\APIGateway.API\\Dockerfile",
+              "ToolTip": "C:\\Users\\A C E R   N I T R O\\Documents\\.NET\\Uy ishi\\MicroservicesDocker\\src\\APIGateway\\APIGateway.API\\Dockerfile",
+              "RelativeToolTip": "src\\APIGateway\\APIGateway.API\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-09T05:37:19.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ocelot.json",
+              "DocumentMoniker": "C:\\Users\\A C E R   N I T R O\\Documents\\.NET\\Uy ishi\\MicroservicesDocker\\src\\APIGateway\\APIGateway.API\\ocelot.json",
+              "RelativeDocumentMoniker": "src\\APIGateway\\APIGateway.API\\ocelot.json",
+              "ToolTip": "C:\\Users\\A C E R   N I T R O\\Documents\\.NET\\Uy ishi\\MicroservicesDocker\\src\\APIGateway\\APIGateway.API\\ocelot.json",
+              "RelativeToolTip": "src\\APIGateway\\APIGateway.API\\ocelot.json",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAHAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-09T04:54:52.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\A C E R   N I T R O\\Documents\\.NET\\Uy ishi\\MicroservicesDocker\\src\\APIGateway\\APIGateway.API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\APIGateway\\APIGateway.API\\Program.cs",
+              "ToolTip": "C:\\Users\\A C E R   N I T R O\\Documents\\.NET\\Uy ishi\\MicroservicesDocker\\src\\APIGateway\\APIGateway.API\\Program.cs",
+              "RelativeToolTip": "src\\APIGateway\\APIGateway.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T04:53:36.141Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

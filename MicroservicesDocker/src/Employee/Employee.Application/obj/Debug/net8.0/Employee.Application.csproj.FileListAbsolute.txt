@@ -1,0 +1,15 @@
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\bin\Debug\net8.0\Employee.Application.deps.json
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\bin\Debug\net8.0\Employee.Application.dll
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\bin\Debug\net8.0\Employee.Application.pdb
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\bin\Debug\net8.0\Employee.Domain.dll
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\bin\Debug\net8.0\Employee.Domain.pdb
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\Employee.Application.csproj.AssemblyReference.cache
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\Employee.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\Employee.Application.AssemblyInfoInputs.cache
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\Employee.Application.AssemblyInfo.cs
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\Employee.Application.csproj.CoreCompileInputs.cache
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\Employee.55D0FAD1.Up2Date
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\Employee.Application.dll
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\refint\Employee.Application.dll
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\Employee.Application.pdb
+C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker\src\Employee\Employee.Application\obj\Debug\net8.0\ref\Employee.Application.dll

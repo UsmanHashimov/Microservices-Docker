@@ -1,0 +1,10 @@
+﻿namespace Department.API.Models
+{
+    public class DepartmentModel
+    {
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public string Name { get; set; }
+        public string Location { get; set; }
+    }
+
+}

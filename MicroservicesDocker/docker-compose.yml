@@ -1,0 +1,111 @@
+version: '3.4'
+
+services:
+  apigateway.api:
+    image: ${DOCKER_REGISTRY-}apigatewayapi
+    build:
+      context: .
+      dockerfile: src/APIGateway/APIGateway.API/Dockerfile
+
+  department.api:
+    image: ${DOCKER_REGISTRY-}departmentapi
+    build:
+      context: .
+      dockerfile: src/Department/Department.API/Dockerfile
+    depends_on:
+      - db1
+    networks:
+      - db-network
+
+  employee.api:
+    image: ${DOCKER_REGISTRY-}employeeapi
+    build:
+      context: .
+      dockerfile: src/Employee/Employee.API/Dockerfile
+    depends_on:
+      - db2
+    networks:
+      - db-network
+
+  position.api:
+    image: ${DOCKER_REGISTRY-}positionapi
+    build:
+      context: .
+      dockerfile: src/Position/Position.API/Dockerfile
+    depends_on:
+      - db3
+    networks:
+      - db-network
+
+  project.api:
+    image: ${DOCKER_REGISTRY-}projectapi
+    build:
+      context: .
+      dockerfile: src/Project/Project.API/Dockerfile
+    depends_on:
+      - db4
+    networks:
+      - db-network
+
+  db4:
+    container_name: db4
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=usmonjon01
+      - POSTGRES_DB=ProjectDockerDB
+    volumes:
+      - pgdata:/var/lib/postgresql/ProjectDockerDB
+    ports:
+      - "5432:5432"
+    networks:
+      - db-network
+
+  db1:
+    container_name: db1
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=usmonjon01
+      - POSTGRES_DB=DepartmentDockerDB
+    volumes:
+      - pgdata:/var/lib/postgresql/DepartmentDockerDB
+    ports:
+      - "5433:5432"
+    networks:
+      - db-network
+
+  db2:
+    container_name: db2
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=usmonjon01
+      - POSTGRES_DB=EmployeeDockerDB
+    volumes:
+      - pgdata:/var/lib/postgresql/EmployeeDockerDB
+    ports:
+      - "5434:5432"
+    networks:
+      - db-network
+
+  db3:
+    container_name: db3
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=usmonjon01
+      - POSTGRES_DB=PositionDockerDB
+    volumes:
+      - pgdata:/var/lib/postgresql/PositionDockerDB
+    ports:
+      - "5435:5432"
+    networks:
+      - db-network
+
+networks:
+  db-network:
+    driver: bridge
+
+volumes:
+  pgdata:

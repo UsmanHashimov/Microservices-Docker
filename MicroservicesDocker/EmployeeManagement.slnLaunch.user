@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "src\\Employee\\Employee.API\\Employee.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "src\\Department\\Department.API\\Department.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "src\\Position\\Position.API\\Position.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "src\\Project\\Project.API\\Project.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "src\\APIGateway\\APIGateway.API\\APIGateway.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

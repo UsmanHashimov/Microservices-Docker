@@ -1,0 +1,258 @@
+name: dockercompose4388188509798801967
+services:
+  apigateway.api:
+    build:
+      context: C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker
+      dockerfile: src/APIGateway/APIGateway.API/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: apigatewayapi
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  db1:
+    container_name: db1
+    environment:
+      POSTGRES_DB: DepartmentDockerDB
+      POSTGRES_PASSWORD: usmonjon01
+      POSTGRES_USER: postgres
+    image: postgres:latest
+    networks:
+      db-network: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5433"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: pgdata
+        target: /var/lib/postgresql/DepartmentDockerDB
+        volume: {}
+  db2:
+    container_name: db2
+    environment:
+      POSTGRES_DB: EmployeeDockerDB
+      POSTGRES_PASSWORD: usmonjon01
+      POSTGRES_USER: postgres
+    image: postgres:latest
+    networks:
+      db-network: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5434"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: pgdata
+        target: /var/lib/postgresql/EmployeeDockerDB
+        volume: {}
+  db3:
+    container_name: db3
+    environment:
+      POSTGRES_DB: PositionDockerDB
+      POSTGRES_PASSWORD: usmonjon01
+      POSTGRES_USER: postgres
+    image: postgres:latest
+    networks:
+      db-network: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5435"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: pgdata
+        target: /var/lib/postgresql/PositionDockerDB
+        volume: {}
+  db4:
+    container_name: db4
+    environment:
+      POSTGRES_DB: ProjectDockerDB
+      POSTGRES_PASSWORD: usmonjon01
+      POSTGRES_USER: postgres
+    image: postgres:latest
+    networks:
+      db-network: null
+    ports:
+      - mode: ingress
+        target: 5432
+        published: "5432"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: pgdata
+        target: /var/lib/postgresql/ProjectDockerDB
+        volume: {}
+  department.api:
+    build:
+      context: C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker
+      dockerfile: src/Department/Department.API/Dockerfile
+    depends_on:
+      db1:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: departmentapi
+    networks:
+      db-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  employee.api:
+    build:
+      context: C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker
+      dockerfile: src/Employee/Employee.API/Dockerfile
+    depends_on:
+      db2:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: employeeapi
+    networks:
+      db-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  position.api:
+    build:
+      context: C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker
+      dockerfile: src/Position/Position.API/Dockerfile
+    depends_on:
+      db3:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: positionapi
+    networks:
+      db-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  project.api:
+    build:
+      context: C:\Users\A C E R   N I T R O\Documents\.NET\Uy ishi\MicroservicesDocker
+      dockerfile: src/Project/Project.API/Dockerfile
+    depends_on:
+      db4:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: projectapi
+    networks:
+      db-network: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\A C E R   N I T R O\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  db-network:
+    name: dockercompose4388188509798801967_db-network
+    driver: bridge
+  default:
+    name: dockercompose4388188509798801967_default
+volumes:
+  pgdata:
+    name: dockercompose4388188509798801967_pgdata
